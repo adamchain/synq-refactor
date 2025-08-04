@@ -1,0 +1,14 @@
+{
+  "firstName": {
+    "label": "First name",
+    "value": "Testing 2"
+  },
+  "secondName": {
+    "label": "Last name",
+    "value": "Admin 2"
+  },
+  "phone": {
+    "label": "Phone number",
+    "value": "9876543210"
+  }
+}

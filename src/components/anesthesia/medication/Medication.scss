@@ -1,0 +1,30 @@
+@use "../../../customstyle.scss" as *;
+
+.medication-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+  }
+
+  .ant-select,
+  .ant-input-suffix {
+    font-size: 12px;
+  }
+}
+
+.medication-card {
+
+  .ant-card-body {
+    background-color: $secondaryBackgroundColor;
+    padding: 20px;
+    border-radius: 1em;
+    margin-bottom: 24px;
+  }
+}
+
+.medicationButton {
+  min-width: 210px !important;
+}

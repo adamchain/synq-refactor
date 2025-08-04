@@ -1,0 +1,404 @@
+$primaryColor: #002729;
+$altColor : #008489;
+$popColor: #E83151;
+// This is the seafoam color //
+$altBackgroundColor: #eafeff;
+// This is the other background color that we use across the app //
+$secondaryBackgroundColor: #F0F4F9; 
+$inputBKG : #F0F4F9; 
+$borderColor: #e0e0e0;
+$hoverColor: #F1F5FA; 
+$icon-size: 27px;
+$primaryText: #012729;
+$secondaryText: #757575;
+$emptyText: #BFC8D6;
+$border-color : #e0e0e0;
+$button-text-color: #595959;
+$dangerColor: #D11B45;
+$successColor: #027D02;
+$fontWeightMedium: 500;
+$fontWeightSemi: 600;
+$altFontFamily: 'Open Sans', sans-serif;
+
+.ant-typography {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+a.ant-typography {
+  font-weight: $fontWeightMedium;
+}
+
+.ant-table-tbody {
+  font-weight: 300;
+}
+
+.ant-input:focus, .ant-input-focused, .ant-select-focused:not(.ant-select-disabled).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #a1a1a1;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused  {
+  border-color: #a1a1a1;
+  box-shadow: none;
+}
+
+h2.ant-typography, .ant-typography h2 { 
+  font-weight:500;
+  margin:0px;
+}
+
+h4.ant-typography, .ant-typography h4 { 
+  font-weight:500;
+  margin:0px;
+}
+
+h5.ant-typography, .ant-typography h5 { 
+  font-weight:500;
+  margin:0px;
+  font-size: 18px;
+}
+
+h6.ant-typography, .ant-typography h6 { 
+  font-weight:500;
+  margin:0px;
+  font-size: 16px;
+}
+
+.ant-input-lg {
+  font-size: 14px;
+}
+
+*:focus {
+  outline: none;
+}
+
+.ant-tag {
+  padding: 0 12px;
+  font-weight: 500;
+  border-radius: 4px;
+
+//// for the green and the red tags, the borders were breaking and this is just adjusting that so it doesnt look like poo poo ///
+  &.ant-tag-green {
+    border: 0px;
+    color: #00A878;
+    background: #CDEEE5;
+    border-color: #00A878;
+    box-shadow: 0px 0px 0px 1px #00A878 inset;
+  }
+  &.ant-tag-red {
+    border: 0px;
+    color: #D11B45;
+    background: #F6D2DB;
+    border-color: #D11B45;
+    box-shadow: 0px 0px 0px 1px #D11B45 inset;
+  }
+}
+
+.ant-form-item-label {
+  padding: 0 0 4px;
+}
+
+.ant-btn {
+  letter-spacing: 0.6px !important;
+  font-weight:400;
+}
+
+.ant-btn-sm {
+  font-size: 12px !important;
+  padding: 4px 18px !important;
+}
+
+.ant-btn-round.ant-btn-lg {
+  padding: 10.4px 18px !important;
+  font-size: 14px !important;
+}
+
+.ant-btn-primary:hover {
+  background:$altColor;
+  border-color: $altColor;
+  transition: 250ms;
+}
+.ant-btn-background-ghost:hover {
+  background: transparent !important;
+  border-color: $altColor !important;
+  color: $altColor !important;
+  transition: 150ms;
+}
+.setWidthTableButtons {
+  min-width: 150px;
+}
+
+.masterContentPadding {
+  padding: 0px 24px 24px 24px;
+  .ant-picker-range {
+    background:transparent;
+    border-radius: 50px;
+  }
+}
+
+.ant-layout-sider {
+  z-index: 3;
+  -webkit-box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.05);
+  box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.05);
+}
+
+.ant-layout-header {
+  z-index: 2;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05) !important;
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05) !important;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05) !important;
+}
+
+.ant-modal-content,.ant-modal-content .ant-modal-header {
+  border-radius: 20px 20px 20px 20px;
+  }
+.ant-modal-header ,.ant-modal-footer{
+    border:none;
+  }
+@mixin cardShadow {
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 5px 5px 10px rgb(0 0 0 / 5%);
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 5%);
+}
+
+@mixin fontMedium {
+  font-weight: $fontWeightMedium
+}
+
+@mixin fontSemi {
+  font-weight: $fontWeightSemi
+}
+
+///////////////////////////////////////////////////////////////////
+// NOT SURE WE NEED TO DO WHATS BELOW HERE  AT ALL /////////////
+.font-size-12 {
+  font-size: 12px !important;
+}
+.font-size-13 {
+  font-size: 13px !important;
+}
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.text-default-500 {
+  font-size: 24px;
+  color: $primaryText;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
+
+.text-default-400 {
+  font-size: 14px;
+  color: $primaryText;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.text-default-600 {
+  font-size: 20px;
+  color: $primaryText;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+.text-default-650 {
+  font-size: 20px;
+  color: $primaryText;
+  letter-spacing: 0.6px;
+  font-weight: 650;
+}
+
+.text-secondary-400 {
+  font-size: 14px;
+  color: $secondaryText;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.text-success-400 {
+  font-size: 14px;
+  color: $successColor;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.text-danger-400 {
+  font-size: 14px;
+  color: $dangerColor;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.text-primary-500 {
+  font-size: 13px;
+  color: $primaryText;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
+
+.text-button-500 {
+  font-weight: 500;
+}
+
+//////////////////////////////////
+
+
+// This is for the Cards around the content on main pages//
+.pageCardContainer {
+  border-radius: 1em;
+  font-size:16px;
+  .ant-card-head-title {
+    font-size:16px;
+    font-weight:$fontWeightMedium;
+  }
+}
+
+// Adding margin to the paginator to make sure its not flush with the end of a card//
+.ant-table-pagination.ant-pagination {
+  margin: 24px 24px;
+}
+
+.ant-table {
+  border-top: 1px solid $borderColor;
+}
+
+.formSection {
+  margin-bottom: 16px;
+}
+
+.ant-drawer-footer {
+  box-shadow: 1px -5px 5px 0px rgba(0,0,0,0.09);
+  -webkit-box-shadow: 1px -5px 5px 0px rgba(0,0,0,0.09);
+  -moz-box-shadow: 1px -5px 5px 0px rgba(0,0,0,0.09);
+  padding: 24px 24px;
+   .drawerAltButton {
+     padding: 0px;
+     font-size: 14px;
+   }
+   .ant-btn {
+     min-width: 140px;
+   }
+   .footer-button {
+    display: flex;
+    justify-content: flex-end;
+    }
+
+}
+
+// THIS IS FIXING THE ANT BUG FOR ACTIVE COLUMN ICON COLORATION
+.ant-table-filter-trigger.active svg {
+  color: $altColor;
+}
+
+.createNewModalBody {
+  padding-bottom: 36px;
+}
+.formLabel {
+  margin-bottom: 12px;
+}
+
+//This is for the page scroll minus the main header and page header //
+.scollerMaster {
+  height: calc(100vh - 149px);
+  overflow-y: scroll;
+}
+
+// This is for closing the wide gap on labels
+
+.ant-form-vertical .ant-form-item-label, .ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label {
+  padding: 0 0 5px;
+}
+
+.ant-divider {
+  border-top: 1px solid $borderColor;
+}
+
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: 500;
+  text-shadow: none;
+  letter-spacing: 0.4px !important;
+}
+
+.ant-tabs-tab-btn  {
+  letter-spacing: 0.4px !important;
+}
+
+.ant-drawer-title {
+  font-size: 18px !important;
+}
+
+.ant-modal-title {
+  font-size: 18px;
+}
+// This is for the font in the Submenu of the Main Nav //
+.ant-select-item-option-content {
+  font-weight: 300;
+}
+
+.ant-input-lg {
+  font-size: 14px;
+}
+.ant-select-lg {
+  font-size: 14px;
+}
+
+// .ant-input-lg {
+//   min-height: 40px;
+// }
+
+.ant-picker-focused {
+  box-shadow:none;
+}
+
+
+// Table Coloring //
+.ant-table-thead > tr > th {
+  background: $secondaryBackgroundColor;
+}
+
+.ant-table {
+  border-left: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+}
+
+// Pulling more attention to the Search Icons //
+.ant-table-filter-trigger {
+  color:#252525;
+}
+
+// Fixing border radius on calendars //
+.ant-picker-cell .ant-picker-cell-inner {
+  border-radius: 50px;
+  transition: background .2s,border .2s;
+}
+
+// Fixing time picker extra deadspace on entries //
+.ant-picker-time-panel-column:after {
+  height:auto;
+}
+
+.ant-typography a.ant-typography-disabled, .ant-typography a[disabled], a.ant-typography.ant-typography-disabled, a.ant-typography[disabled] {
+  fill: rgba(0, 0, 0, 0.25);
+  .trashIcon:hover {
+    fill: rgba(0, 0, 0, 0.25) !important;
+  }
+  
+}

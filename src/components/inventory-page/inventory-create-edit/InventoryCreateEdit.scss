@@ -1,0 +1,38 @@
+@use "../../../customstyle.scss" as *;
+
+.inventory-edit-profile {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+  }
+}
+
+
+.inventory-item-card {
+  border-radius: 16px;
+  cursor: pointer;
+  height: 15em;
+
+  .small-text {
+    font-size: 12px;
+  }
+
+  &:hover {
+    border-color: $altColor !important;
+
+    .item-name {
+      color: $altColor;
+    }
+
+    .inventory-item-icon,
+    .external-lab-icon,
+    .procedure-icon,
+    .internal-lab-icon {
+      fill: $altColor !important;
+    }
+
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "transactionType": {
+    "label": "Transaction type",
+    "value": "Acquisition",
+    "type": "dropdown"
+  },
+  "name": {
+    "label": "Deal name",
+    "value": "Test Deal"
+  },
+  "client": { "label": "Client", "value": "Test Client" },
+  "location": { "label": "Location", "value": "Test Location" },
+  "description": {
+    "label": "Description",
+    "value": "A slightly longer test description with more words than most other fields in this page.",
+    "type": "textarea"
+  },
+  "status": {
+    "label": "Status",
+    "value": "On Hold",
+    "type": "dropdown"
+  },
+  "amount": {
+    "label": "Deal amount",
+    "value": "12200",
+    "displayValue": "$12,200"
+  },
+  "closingDate": {
+    "label": "Closing date",
+    "value": "2022-12-12"
+  }
+}

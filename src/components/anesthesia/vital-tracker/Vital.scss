@@ -1,0 +1,28 @@
+@use "../../../customstyle.scss" as *;
+
+.vital-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+  }
+
+  .ant-picker {
+    width: 100%;
+  }
+}
+
+#vital-tracker-table {
+
+  .trashIcon,
+  .editIcon {
+    fill: $primaryColor;
+
+    &:hover {
+      fill: $altColor;
+    }
+  }
+
+}

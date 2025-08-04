@@ -1,0 +1,52 @@
+@use "./../../../customstyle.scss" as *;
+
+.inventory-reminder-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .trashIcon,
+  .editIcon {
+    fill: $primaryColor;
+
+    &:hover {
+      fill: $altColor;
+    }
+  }
+
+}
+
+.circleborder {
+  box-shadow: 0 0 0 3px $primaryColor;
+  border-radius: 100%;
+  display: inline-block;
+  padding: 4px;
+}
+
+.InvReminderIconCont {
+  width: 60px;
+  height: 60px;
+  background-color: $primaryColor;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inventoryRemindersIcon {
+    fill: #ffffff;
+    height: 32px;
+
+  }
+}
+
+.InvReminderVMC {
+  font-size: 13px;
+  line-height: 13px;
+  color: $secondaryText;
+}
+
+.InvReminderTitle {
+  font-size: 16px;
+  font-weight: 500;
+
+}

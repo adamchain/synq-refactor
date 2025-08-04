@@ -1,0 +1,13 @@
+@use "../../customstyle.scss" as *;
+
+#billing-page {
+
+  .editIcon,
+  .downloadIcon {
+    fill: $primaryColor;
+
+    &:hover {
+      fill: $altColor;
+    }
+  }
+}

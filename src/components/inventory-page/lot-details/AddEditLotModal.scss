@@ -1,0 +1,9 @@
+@use "./../../../customstyle.scss" as *;
+
+.ant-modal-footer {
+    border-top: 1px solid $border-color !important;
+}
+
+.ant-modal-body {
+    padding: 8px 24px 24px 24px;
+}

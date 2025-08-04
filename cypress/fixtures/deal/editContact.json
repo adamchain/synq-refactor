@@ -1,0 +1,33 @@
+{
+  "firstName": { "label": "First name", "value": "Test 2" },
+  "lastName": { "label": "Second name", "value": "Contact 2" },
+  "companyName": { "label": "Company name", "value": "Test Company 2" },
+  "address": { "label": "Address", "value": "Whitman County" },
+  "city": { "label": "City", "value": "Hooper" },
+  "state": { "label": "State", "value": "WA" },
+  "zipcode": {
+    "label": "Zipcode",
+    "value": "99333"
+  },
+  "contactType": {
+    "label": "Contact type",
+    "value": "Title",
+    "type": "dropdown"
+  },
+  "email": {
+    "label": "Email address",
+    "value": "lender.test-2@does-not-exist.com"
+  },
+  "phoneOffice": {
+    "label": "Office phone",
+    "value": "9876543210"
+  },
+  "phoneMobile": {
+    "label": "Mobile phone",
+    "value": "9876543210"
+  },
+  "fax": {
+    "label": "Fax",
+    "value": "9876543210"
+  }
+}

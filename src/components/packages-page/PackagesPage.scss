@@ -1,0 +1,70 @@
+@use "../../customstyle.scss" as *;
+
+.package-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+  }
+}
+
+.pageCardContainer {
+  height: 100%;
+  max-height: calc(100vh - 165px);
+
+  .ant-card-body {
+    padding: 0px;
+  }
+}
+
+.packageSummaryHeader {
+  padding-top: 24px;
+  font-size: 18px;
+  font-weight: $fontWeightSemi;
+}
+
+.package-subtotal {
+  margin-bottom: 12px;
+}
+
+.package-total-card {
+  .ant-card-body {
+    padding: 5em;
+  }
+
+  background: $secondaryBackgroundColor;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  .package-total-text {
+    font-size: 24px;
+  }
+}
+
+#package-detail-table {
+
+  .ant-table-tbody>tr>td,
+  .ant-table-thead>tr>th {
+    padding: 12px 16px;
+  }
+
+  .is-external-lab {
+    background-color: #FEF6ED;
+
+    .ant-table-tbody>tr.ant-table-row:hover>td {
+      background: red !important;
+    }
+
+    .external-lab-column {
+      border-left: #F59A23 solid 0.3em;
+    }
+
+    .ant-table-cell-fix-right {
+      background-color: inherit;
+    }
+  }
+}

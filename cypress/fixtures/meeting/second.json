@@ -1,0 +1,10 @@
+{
+  "name": {
+    "value": "Sample Second Meeting"
+  },
+  "description": {
+    "label": "Description",
+    "value": "There is no agenda for this meeting.",
+    "type": "textarea"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "transactionType": {
+    "label": "Transaction type",
+    "value": "Refinance",
+    "type": "dropdown"
+  },
+  "name": {
+    "label": "Deal name",
+    "value": "Test Deal 2"
+  },
+  "client": { "label": "Client", "value": "Test Client 2" },
+  "location": { "label": "Location", "value": "Test Location 2" },
+  "description": {
+    "label": "Description",
+    "value": "A shorter edited description.",
+    "type": "textarea"
+  },
+  "status": {
+    "label": "Status",
+    "value": "Active",
+    "type": "dropdown"
+  },
+  "amount": {
+    "label": "Deal amount",
+    "value": "24400",
+    "displayValue": "$24,400"
+  },
+  "closingDate": {
+    "label": "Closing date",
+    "value": "2022-12-20"
+  }
+}

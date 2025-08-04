@@ -1,0 +1,36 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // Vertically center the form
+  background-color: #f0f2f5; // Light background
+
+  .form-card {
+    width: 100%;
+    max-width: 600px; // Maximum width for form container
+    margin: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Box shadow for depth
+    border-radius: 8px; // Rounded corners
+    background-color: #fff;
+
+    // Add responsive adjustments if needed
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 600px;
+    }
+  }
+}
+
+.clientIntake .ant-row .ant-col:nth-child(17),.clientIntake #patient-form-id .ant-row .ant-col:nth-child(22),.clientIntake #patient-form-id .ant-row .ant-col:nth-child(23) {
+  display: none;
+}
+.clientIntake #client-form-id .ant-row:nth-child(6),.clientIntake #client-form-id .ant-row:nth-child(7) {
+  display: none;
+}
+.clientIntake .ant-card-head-title {
+  font-size: 20px;
+}

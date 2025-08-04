@@ -1,0 +1,11 @@
+@use "../../customstyle.scss" as *;
+
+.print-label-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+  }
+}

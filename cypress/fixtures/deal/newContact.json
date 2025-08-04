@@ -1,0 +1,33 @@
+{
+  "firstName": { "label": "First name", "value": "Test" },
+  "lastName": { "label": "Last name", "value": "Contact" },
+  "companyName": { "label": "Company name", "value": "Test Company" },
+  "address": { "label": "Address", "value": "King County" },
+  "city": { "label": "City", "value": "Federal Way" },
+  "state": {
+    "label": "State",
+    "value": "WA"
+  },
+  "zipcode": { "label": "Zipcode", "value": "98093" },
+  "contactType": {
+    "label": "Contact type",
+    "value": "Lender",
+    "type": "dropdown"
+  },
+  "email": {
+    "label": "Email address",
+    "value": "lender.test@does-not-exist.com"
+  },
+  "phoneOffice": {
+    "label": "Office phone",
+    "value": "1234567890"
+  },
+  "phoneMobile": {
+    "label": "Mobile phone",
+    "value": "1234567890"
+  },
+  "fax": {
+    "label": "Fax",
+    "value": "1234567890"
+  }
+}

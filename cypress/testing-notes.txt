@@ -1,0 +1,24 @@
+Functionally relevant:
+- Edit Contact form doesn't preserve prior filled information (Edit Deal does preserves for the most part, desctructive editing).
+- Edit Deal form does not preserve prior Deal Amount values (destructive editing).
+- Under 'Deal Summary', Description values get cut off when long (no wrapping present currently) (I would assume this would happen for all the items in Deal Summary).
+> Meeting creation errors are non-descriptive ("Incorrect input data" when it's supposed to tell the user that the event title is missing.)
+> Can't delete / rename created folders, no way to do so via the UI.
+> Export Calendar is non-functional.
+> Signature Pages cannot be renamed. We can start editing it, but cannot check mark it to confirm the edit.
+> `Duplicate binder` crashes the UI (after successfully duplicating).
+> Closing binders can be deleted without confirmation. (Edit and delete buttons are right next to each other!)
+
+> (FIXED) Team Management issue: While changing admin type for self, we get a server error 500, instead of the appropriate error message.
+
+More UX based issues:
+
+> Deals / Contact
+  - Create/Edit Contact form labels are not Title Cased.
+  - Add/Edit contact types form title is not Title Cased.
+  - (Internal) Add/Edit contact types form inputs are not tagged with proper names.
+  - Deals list view issue: What is highlighted when hovering over the Deal item, is not all clickable. Only the name portion is clickable (UI/UX mismatch).
+> Deals / Summary
+  - Deal Amount is improperly formatted (12200 instead of $12,200).
+
+> Lock / Unlock binder dialog box secondary buttons say "Done" instead of "Cancel" or something equivalent of a no-op. (Comparatively, `Add documents` has a proper Cancel button.)

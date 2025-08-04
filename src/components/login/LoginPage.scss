@@ -1,0 +1,109 @@
+@use "../../customstyle.scss" as *;
+
+.login-desc {
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .01em;
+    text-align: center;
+    margin-left: 2em;
+}
+
+
+.col-layout {
+    border: 1px solid $borderColor;
+    background-color: #fff;
+    margin: '2em';
+
+}
+
+.login-layout {
+    margin: 0px 0px;
+
+    .ant-card-body {
+        padding: 0px 24px 24px 24px;
+    }
+
+    .login-shrinkwrap {
+        padding: 0px 13%;
+
+        @media (max-width: 576px) {
+            padding: 0px 0px;
+        }
+
+    }
+
+    .ant-form-item .text-default-400 {
+        font-weight: 400px !important;
+    }
+
+}
+
+.signin-header {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: $primaryText;
+}
+
+.login-label {
+    font-style: normal;
+    font-size: 15px;
+    color: #012729;
+    font-weight: 500;
+}
+
+.login-form-button {
+    height: 53px !important;
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.login-side {
+    padding: 50px;
+    z-index: 2;
+    background-color: #ffffff;
+    height: calc(100vh - 0px);
+    overflow: scroll;
+
+    @media (max-width: 500px) {
+        padding: 50px 15px;
+    }
+}
+
+.passwordSuccessDesc {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.heroLogin {
+    background-position: 30% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $secondaryBackgroundColor;
+}
+
+.heroLock {
+    width: 100%;
+    height: 100vh;
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.loginLogo svg>g {
+    height: 70px !important;
+
+}
+
+#login-form-id label {
+    width: 100% !important;
+}
+
+
+.login-formfield .ant-form-item-explain-error {
+    padding-bottom: 16px;
+}

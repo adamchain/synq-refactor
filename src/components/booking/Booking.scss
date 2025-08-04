@@ -1,0 +1,22 @@
+.stylist-card:hover,
+.service-card:hover {
+  border-color: #6366f1 !important;
+}
+
+.stylist-card.selected,
+.service-card.selected {
+  border-color: #6366f1 !important;
+  background-color: #f5f5ff;
+}
+
+.clientBooking .react-calendar {
+    position: absolute;
+    z-index: 999;
+    top: 50px;
+}
+
+@media (max-width: 576px) {
+  .bookingAvailableTimes{
+      flex-flow: column !important
+    }
+  }
