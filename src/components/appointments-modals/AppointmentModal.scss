@@ -1,0 +1,158 @@
+@use "../../customstyle.scss" as *;
+
+.appt-button.ant-btn>span {
+  font-size: 11px;
+  text-wrap: auto;
+}
+
+.appt-time-button.ant-btn-round {
+  min-width: 100px;
+}
+
+.appt-card .ant-card-body {
+  padding: 1px;
+}
+
+.appt-modal .ant-modal-content {
+  border-radius: 20px;
+}
+
+.appt-modal .ant-modal-header {
+  border-radius: 20px;
+  border-bottom: 0px;
+}
+
+#innerCalendar .react-calendar {
+  width: 100% !important;
+  max-width: 100%;
+  line-height: 1.125em;
+  border: 0px;
+  background: none;
+}
+
+#innerCalendar .react-calendar__tile--active {
+  border: 0px solid;
+  background: $altColor !important;
+  color: #ffffff !important;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+#innerCalendar .react-calendar__tile--now {
+  background: transparent;
+  color: $altColor;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.react-calendar__tile {
+  padding: 12.5px 10px !important;
+}
+
+.react-calendar__navigation button.react-calendar__navigation__arrow {
+  font-size: 20px;
+}
+
+.react-calendar__navigation__label {
+  cursor: none;
+  pointer-events: none;
+  font-weight: 500;
+}
+
+.react-calendar__month-view__weekdays {
+  font-weight: 500;
+}
+
+.react-calendar__month-view__weekdays abbr[title] {
+  cursor: none;
+  text-decoration: none;
+}
+
+.react-calendar__navigation__label__labelText .react-calendar__navigation__label__labelText--from {
+  font-weight: 500 !important;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent !important;
+  color: $altColor;
+  font-weight: 500;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: RGBA(0, 132, 136, 0.15);
+  border-radius: 50px;
+}
+
+.appt-modal {
+
+  .steps-action {
+    text-align: right;
+  }
+
+  .ant-modal-body {
+    padding: 12px 24px 24px 24px;
+
+  }
+
+  .appt-button,
+  .appt-time-button {
+    width: 100%;
+  }
+
+  .ant-btn-round.ant-btn-sm.appt-button {
+    height: 60px !important;
+  }
+
+  .appt-time-button.ant-btn>span {
+    font-size: 11px;
+  }
+
+  .bookingAvailableTimes {
+    // max-height:200px;
+    // overflow-y: scroll;
+    padding-bottom: 20px;
+
+  }
+
+  .ant-modal-footer {
+    border-top: 1px solid $border-color;
+  }
+
+  .bookingModalCalendar {
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .react-calendar__month-view {
+    width: 300px;
+  }
+}
+
+
+.no-available-time {
+
+  background-color: #F1F5FA;
+  padding: 20px !important;
+
+  .behaviorAlertIcon {
+    fill: $secondaryText
+  }
+}
+
+.blockOffModal {
+  .ant-modal-body {
+    padding: 8px 24px 24px 24px;
+  }
+}
+
+.boarding-modal {
+  .ant-modal-body {
+    padding: 8px 24px 24px 24px;
+  }
+}
+
+.hider {
+  display: none;
+}

@@ -1,0 +1,54 @@
+@use "../../../customstyle.scss" as *;
+
+.custom-image {
+  position: relative;
+
+  .circle-border {
+    box-shadow: 0 0 0 4px;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 6px;
+  }
+
+  .with-image {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .behaviorAlertIcon {
+    fill: $dangerColor;
+  }
+
+  .behaviorAlertCont {
+    position: absolute;
+    left: 20px;
+  }
+
+  .ant-badge-count,
+  .ant-badge-dot,
+  .ant-badge .ant-scroll-number-custom-component {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    transform: translate(-75%, 0%);
+    transform-origin: 100% 0%;
+  }
+
+  .without-image {
+    background: $primaryColor;
+    color: #ebfeff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .client-initial {
+      font-size: 36px;
+      font-weight: 500;
+    }
+  }
+}

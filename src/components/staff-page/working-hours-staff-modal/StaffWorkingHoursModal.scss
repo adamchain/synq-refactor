@@ -1,0 +1,74 @@
+@use "../../../customstyle.scss" as *;
+
+.staff-working-hours-modal {
+
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  .ant-modal-header {
+    border: none;
+    padding-bottom: 0;
+    border-radius: 16px;
+  }
+
+  .ant-modal-footer {
+    border: none;
+    border-radius: 16px;
+    padding: 16px 24px;
+
+    .ant-btn {
+      min-width: 49%;
+    }
+
+  }
+
+  .cancel-button {
+    border: none;
+  }
+
+  .time-range {
+    margin-bottom: 16px;
+  }
+}
+
+.working-days {
+  margin-bottom: 24px;
+  margin-top: 24px;
+
+  button {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .black-button {
+    background-color: $primaryColor;
+    color: white;
+  }
+
+  .white-button {
+    background-color: white;
+    color: black;
+  }
+}
+
+.apply-to-all {
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  color: $primaryColor;
+  padding: 0px !important;
+
+  &:hover {
+    color: $altColor;
+    fill: $altColor;
+  }
+
+  .duplicateIcon {
+    padding-right: 8px;
+    float: left;
+  }
+}

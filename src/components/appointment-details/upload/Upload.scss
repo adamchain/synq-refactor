@@ -1,0 +1,70 @@
+@use "../../../customstyle.scss" as *;
+
+.react-photo-gallery--gallery {
+    .ant-image-mask {
+        // background-color: #008489 !important;
+        background: rgba(0, 137, 132, 0.6) !important;
+    }
+
+    .ant-image-error .ant-image-img {
+        cursor: pointer !important;
+    }
+}
+
+.upload-gallery {
+    padding: 4px;
+}
+
+.react-photo-gallery--gallery .ant-image-img {
+    max-height: 250px;
+
+}
+
+.react-photo-gallery--gallery .ant-image {
+    max-height: 250px;
+    width: auto !important;
+
+}
+
+.react-photo-gallery--gallery .ant-image-error {
+    max-height: 250px;
+
+}
+
+.react-images__view-image--isModal {
+    max-width: 80%;
+    padding: 18%;
+}
+
+.react-images__header_button--fullscreen {
+    float: left;
+    height: 55px !important;
+
+    svg {
+        width: 42px !important;
+        height: 42px !important;
+        fill: #ffffff;
+    }
+
+    &:hover {
+        svg {
+            fill: $altColor;
+        }
+    }
+}
+
+.uploadsDelete {
+    padding: 0px 15px !important;
+
+    &:hover {
+        color: $altColor !important;
+    }
+}
+
+.uploadsClose {
+    padding-right: 24px;
+
+    &:hover {
+        color: $altColor !important;
+    }
+}

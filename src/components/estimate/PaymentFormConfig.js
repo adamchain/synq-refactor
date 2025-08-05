@@ -1,0 +1,116 @@
+import React from "react";
+import {
+  LeftOutlined,
+  LockOutlined,
+  CreditCardOutlined,
+} from "@ant-design/icons";
+
+const PaymentFormConfig = (states) => {
+  return [
+    {
+      label: "First Name",
+      name: "firstName",
+      type: "input",
+      placeholder: "Enter First Name",
+      span: 12,
+      allowFilter: ["manual-credit", "cash", "check", "write-in"],
+    },
+    {
+      label: "Last Name",
+      name: "lastName",
+      type: "input",
+      placeholder: "Enter Last Name",
+      span: 12,
+      allowFilter: ["manual-credit", "cash", "check", "write-in"],
+    },
+    {
+      label: "Card Type",
+      requiredMessage: "Card Type is required",
+      type: "select",
+      placeholder: "Select Payment Type",
+      span: 24,
+      name: "cardType",
+      inputs: [
+        { name: "Visa", value: 1 },
+        { name: "American Express", value: 2 },
+        { name: "Mastercard", value: 3 },
+        { name: "Discover", value: 4 },
+      ],
+      allowFilter: ["write-in"],
+      optionAttribute: { name: "name", value: "value" },
+    },
+    {
+      label: "Card Number",
+      name: "cardNumber",
+      type: "card",
+      placeholder: "Enter Card Number",
+      span: 24,
+      allowFilter: "manual-credit",
+    },
+    {
+      label: "Check Number",
+      name: "checkNumber",
+      type: "input",
+      prefix: <CreditCardOutlined />,
+      placeholder: "Enter Check Number",
+      span: 24,
+      allowFilter: "check",
+    },
+    {
+      label: "Cash Received",
+      name: "cashReceived",
+      type: "input",
+      inputType: "number",
+      prefix: "$",
+      placeholder: "Enter Amount",
+      span: 12,
+      allowFilter: "cash",
+    },
+    {
+      label: "Change Given",
+      name: "changeGiven",
+      inputType: "number",
+      type: "input",
+      prefix: "$",
+      placeholder: "Enter Amount",
+      span: 12,
+      allowFilter: "cash",
+    },
+    {
+      label: "Deposit Date",
+      name: "depositeDate",
+      type: "date",
+      ftype: (current) => current.valueOf() <= Date.now() - 100,
+      placeholder: "Enter Date",
+      span: 12,
+      allowFilter: "cash,check",
+    },
+    {
+      label: "Billing Address",
+      name: "billingAddress",
+      type: "input",
+      placeholder: "Enter Billing Address",
+      span: 24,
+      allowFilter: ["manual-credit", "write-in"],
+    },
+    {
+      label: "State",
+      type: "select",
+      inputs: Object.values(states),
+      name: "state",
+      span: 12,
+      optionAttribute: { name: "stateName", value: "stateId" },
+      allowFilter: ["manual-credit", "write-in"],
+    },
+    {
+      label: "Zip",
+      name: "zip",
+      type: "input",
+      placeholder: "Enter Zip",
+      span: 12,
+      allowFilter: ["manual-credit", "write-in"],
+    },
+  ];
+};
+
+export default PaymentFormConfig;

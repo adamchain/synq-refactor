@@ -1,0 +1,345 @@
+@use "../../customstyle.scss" as *;
+
+.client-profile {
+
+  .client-profile-info {
+    .page-header {
+      background-color: $altBackgroundColor;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      padding: 32px 24px;
+      border-bottom: 1px solid $borderColor;
+      text-align: center;
+    }
+
+    .edit-profile {
+      margin-top: 20px;
+
+      span {
+        padding: 0 50px 0 50px;
+      }
+    }
+
+    .text-email-client {
+      color: $primaryText;
+      color: #012729;
+      position: absolute;
+      top: 0px;
+      left: 85%;
+      z-index: 2;
+      min-width: 80px;
+
+      .profileSendAction {
+
+        &:hover {
+          cursor: pointer;
+
+          svg {
+            fill: $altColor;
+          }
+
+          .text-client,
+          .email-client {
+            color: $altColor;
+          }
+
+          .ant-btn:hover {
+            background: transparent !important;
+          }
+        }
+
+        .ant-btn:disabled {
+          opacity: 0.3;
+        }
+
+        .ant-typography-disabled {
+          opacity: 0.3;
+        }
+      }
+
+
+
+      svg {
+        width: 25px;
+        height: 25px
+      }
+
+      .email-client,
+      .text-client-icon,
+      .email-client-icon {
+        color: $primaryText;
+      }
+
+      .text-client {
+        margin-bottom: 20px;
+        color: $primaryText;
+      }
+    }
+
+    .client-information {
+      padding: 24px;
+
+      .title {
+        margin-top: 12px;
+      }
+
+      .client-more-info {
+        margin-bottom: 12px;
+
+        .client-details {
+          margin-top: 20px;
+
+          .email-color {
+            color: $altColor;
+            cursor: pointer;
+          }
+
+          .text-color {
+            color: $primaryText;
+          }
+        }
+      }
+    }
+  }
+
+  .client-profile-details-tabs {
+
+    .client-profile-tabs {
+      height: calc(100vh - 145px);
+
+      .tab-pets {
+        .client-profile-pet-widget {
+          cursor: pointer;
+          padding-top: 20px;
+          padding-bottom: 32px;
+          border-radius: 16px;
+
+          width: 100%;
+          border: 1px solid $borderColor;
+          @include cardShadow;
+
+          &.add-new-pets {
+            position: relative;
+            padding: 112px 50px 112px 50px;
+            border: 2px dashed $borderColor;
+            box-shadow: none;
+            text-align: center;
+
+            &:hover {
+              border: 2px dashed $altColor;
+
+              .addPetIcon {
+                fill: $altColor;
+                color: $altColor;
+              }
+
+              .add-new-pets-text {
+                color: $altColor;
+              }
+            }
+          }
+
+          .petStatus {
+            color: $successColor;
+            font-size: 14px;
+            @include fontMedium
+          }
+
+          .petWeightDOB {
+            margin-top: -5px;
+            padding-bottom: 12px;
+          }
+
+          .petWeightAgeCont {
+            text-align: center;
+          }
+
+          .addPetIcon .add-new-pets-text {
+            fill: $primaryColor;
+            color: $primaryColor;
+            font-size: 20px;
+
+            &:hover {
+              fill: $altColor;
+              color: $altColor;
+            }
+
+          }
+
+          .add-new-pets-text-container {
+            margin-top: 16px;
+          }
+
+          .add-new-pets-text {
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          .client-status {
+            margin-bottom: 10px;
+          }
+        }
+
+        .text-base {
+          font-size: 19px;
+          margin-top: 14px;
+        }
+
+        .view-profile,
+        .schedule-appointment {
+          margin-top: 12px;
+
+          button {
+            color: $button-text-color;
+            width: 100%;
+            margin-right: 20px;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .ant-tabs-nav {
+        padding: 12px 24px 0px 24px;
+      }
+    }
+
+    .ant-tabs-tab-btn {
+      letter-spacing: 0.4px;
+    }
+
+    .ant-tabs>.ant-tabs-nav .ant-tabs-nav-list,
+    .ant-tabs>div>.ant-tabs-nav .ant-tabs-nav-list {
+      padding-bottom: 12px;
+    }
+
+    .ant-tabs-tab {
+      padding: 12px 20px 12px 20px;
+    }
+
+    .ant-tabs-top>.ant-tabs-nav {
+      margin: 0 0 6px 0;
+    }
+
+    .ant-tabs-nav-operations {
+      display: none;
+    }
+
+    .ant-tabs-content-holder {
+      padding: 24px;
+      overflow-y: scroll;
+    }
+
+  }
+
+  .client-profile-widget {
+    border-radius: 16px;
+    background: white;
+    height: calc(100vh - 145px);
+    overflow-y: scroll;
+  }
+}
+
+.petWidgetCont {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 33%;
+
+  .behaviorAlertCont {
+    position: absolute;
+    left: 20%;
+  }
+}
+
+#clientOverview {
+
+  .userIcon,
+  .editIcon,
+  .sendIcon,
+  .moreIcon {
+    fill: $primaryColor;
+
+    &:hover {
+      fill: $altColor;
+    }
+
+    .ant-table-pagination.ant-pagination {
+      margin: 24px 24px;
+    }
+  }
+
+  .pageCardContainer {
+    height: 100%;
+    max-height: calc(100vh - 165px);
+  }
+
+  .clientListTable {
+    max-height: calc(100vh - 350px);
+  }
+
+  .ant-card-body {
+    padding: 0px;
+  }
+}
+
+.ant-drawer-body {
+  padding: 8px 24px 50px 24px
+}
+
+
+.client-email-text-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+}
+
+.client-profile-details-tabs .remindersWidget {
+  box-shadow: none !important;
+}
+
+/* iPAD CONVERSION UPDATES FOR CLIENT PROFILE */
+
+@media (max-width:1500px) {
+  .client-profile .client-profile-widget {
+    height: auto;
+    overflow-y: none;
+  }
+
+  .client-profile {
+    row-gap: 0px !important;
+  }
+
+  .client-profile-widget {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  .client-profile-details-tabs {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
+
+  .iPadScroller {
+    height: calc(100vh - 150px) !important;
+    overflow: scroll;
+  }
+
+  .client-profile .client-profile-details-tabs .client-profile-tabs {
+    height: auto;
+    min-height: 1000px !important;
+  }
+
+  .client-profile .client-profile-widget {
+    box-shadow: none !important;
+  }
+
+  .petWidgetCont {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0px !important;
+  }
+
+  .add-new-pets {
+    min-width: 0px !important;
+  }
+}

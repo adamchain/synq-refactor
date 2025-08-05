@@ -23,11 +23,12 @@ if (process.env.DATABASE_URL) {
 config.default = {
   db: {
     // debug: console.log,
-    dialect: "mysql",
-    hosts: [dbHost],
-    user: dbUser,
-    pass: dbPass,
-    name: dbName,
+    dialect: process.env.NODE_ENV === "local" || process.env.NODE_ENV === "test" ? "sqlite" : "mysql",
+    storage: process.env.NODE_ENV === "local" || process.env.NODE_ENV === "test" ? ":memory:" : undefined,
+    hosts: process.env.NODE_ENV === "local" || process.env.NODE_ENV === "test" ? undefined : [dbHost],
+    user: process.env.NODE_ENV === "local" || process.env.NODE_ENV === "test" ? undefined : dbUser,
+    pass: process.env.NODE_ENV === "local" || process.env.NODE_ENV === "test" ? undefined : dbPass,
+    name: process.env.NODE_ENV === "local" || process.env.NODE_ENV === "test" ? ":memory:" : dbName,
     memoize: 150,
     defaultLimit: 100,
   },

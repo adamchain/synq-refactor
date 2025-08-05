@@ -1,0 +1,50 @@
+@use "../../customstyle.scss" as *;
+
+.welcome-page {
+  .welcome-name {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .clinic-list {
+    margin-top: 20px;
+
+    .clinic-btn {
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      width: 100%;
+      height: auto;
+
+      .clinic-name {
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .clinic-name-address {
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        white-space: initial;
+
+
+      }
+    }
+  }
+
+  .choose-clinic {
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+
+  .no-clinic {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    border-bottom: 1px dashed $primaryText;
+  }
+
+}

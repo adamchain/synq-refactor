@@ -1,0 +1,738 @@
+@use "../../customstyle.scss" as *;
+
+.calendarContainer {
+  padding: 0px 24px 24px 24px;
+
+  .ant-layout-sider {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+
+#calendarLayout .ant-layout-has-sider {
+  height: calc(100vh - 150px);
+}
+
+#innerCalendar>main>main {
+  padding: 24px;
+  margin: 0em 0em 0em 1em !important;
+  min-height: 280px;
+  border-radius: 20px;
+  height: calc(100vh - 150px);
+
+}
+
+.calContainer {
+  height: calc(100vh - 64px);
+}
+
+.tooltip-custom .ant-popover-arrow {
+  display: none;
+
+}
+
+.tooltip-custom .ant-popover-inner {
+  border-radius: 16px;
+  border: #f0f0f0;
+  width: 240px;
+  background-color: $altBackgroundColor;
+
+  .ant-scroll-number-custom-component {
+    left: -10px;
+  }
+
+  .client-initial {
+    font-size: 24px;
+  }
+}
+
+.tooltip-custom .ant-popover-title {
+  padding: 0 !important;
+  min-height: 0px;
+}
+
+.appointment-popover-title {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px !important;
+  padding: 6px;
+  text-transform: uppercase;
+}
+
+.space-padding {
+  padding: 5px;
+}
+
+.appointment-modal {
+
+  ///THIS IS NOT RIGHT SO BE READY TO DELETE ONCE FIXED //////////////////
+  .calEventName {
+    font-size: 18px;
+    @include fontSemi;
+  }
+
+  .calEventStatus {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .ant-select-arrow {
+    color: #252525;
+  }
+
+  /////////////////////////////////////////////////////
+
+  .appointment-modal-confirmation {
+    border-right: 1px solid $borderColor;
+  }
+
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .wellness-header {
+    background-color: $altBackgroundColor;
+    border-top-left-radius: 16px;
+    border-bottom: 1px solid $borderColor;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+
+    .ant-space-item:not(:first-child) {
+      margin-bottom: 0 !important;
+    }
+
+    .appointment-details-name {
+      font-size: 20px;
+    }
+  }
+
+  .ant-select-selection-item {
+
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .wellness-text {
+    background-color: $altBackgroundColor;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #ebf9f8;
+    border-color: $altColor;
+    position: relative;
+    top: 25px;
+  }
+
+  .appointment-notes {
+    padding: 36px 24px;
+  }
+
+  .appointment-owner-details {
+    padding: 24px;
+
+    .client-more-info {
+      margin-bottom: 12px;
+    }
+
+    button {
+      width: 300px;
+    }
+  }
+}
+
+
+.custom-divider-button {
+  margin-top: 0 !important;
+}
+
+.custom-divider-button .ant-divider-inner-text {
+  padding: 0;
+}
+
+#landing-page div.rbc-toolbar {
+  padding: 8px 0px 16px 0px;
+}
+
+.rbc-btn-group {
+  display: flex;
+  cursor: pointer !important;
+
+}
+
+#landing-page div.rbc-toolbar>span:nth-child(1)>button:nth-child(1) {
+  order: 2;
+  background-color: transparent;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $altColor;
+    color: $altColor;
+    box-shadow: none;
+    background-color: #ffffff;
+    background: #ffffff;
+    ;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $altColor;
+    color: $altColor;
+    box-shadow: none;
+    background-color: #ffffff;
+    background: #ffffff;
+    ;
+    outline: none;
+  }
+}
+
+#landing-page div.rbc-toolbar>span:nth-child(1)>button:nth-child(2) {
+  order: 1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  content: "\2713";
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+#landing-page div.rbc-toolbar>span:nth-child(1)>button:nth-child(3) {
+  order: 3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: none;
+    color: $altColor;
+  }
+}
+
+.rbc-toolbar button:hover {
+  color: $altColor;
+  background-color: transparent;
+  border-color: $altColor;
+  cursor: pointer;
+}
+
+#landing-page div.rbc-toolbar>span.rbc-toolbar-label {
+  text-align: left;
+  color: $primaryColor;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 12px;
+}
+
+#landing-page div.rbc-toolbar>span:nth-child(3)>button:nth-child(1) {
+  border-radius: 20px 0px 0px 20px;
+  padding: 8px 24px;
+  font-size: 13px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#landing-page div.rbc-toolbar>span:nth-child(3)>button:nth-child(2) {
+  font-size: 13px;
+  min-width: 90px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#innerCalendar>main>main>div>div.rbc-toolbar>span:nth-child(1) {
+  font-size: 16px;
+}
+
+#innerCalendar>main>main>div>div.rbc-toolbar>span:nth-child(1)>button:nth-child(3) {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rbc-btn-group>button:last-child:not(:first-child) {
+  border-radius: 0px 20px 20px 0px;
+  padding: 8px 24px;
+  font-size: 13px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.rbc-toolbar button.rbc-active {
+  border-color: $altColor;
+  color: $altColor;
+  box-shadow: none;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $altColor;
+    color: $altColor;
+    box-shadow: none;
+    background-color: transparent;
+    background: transparent;
+    outline: none;
+    z-index: 5 !important;
+  }
+
+  &:focus {
+    border-color: $altColor;
+    color: $altColor;
+    box-shadow: none;
+    background-color: #ffffff;
+    background: #ffffff;
+    ;
+    outline: none;
+    z-index: 5 !important;
+  }
+
+  &:active {
+    border-color: $altColor;
+    color: $altColor;
+    box-shadow: none;
+    background-color: #ffffff;
+    background: #ffffff;
+    ;
+    outline: none;
+    z-index: 5 !important;
+  }
+}
+
+
+
+.rbc-time-view-resources .rbc-today {
+  background-color: rgba(0, 132, 137, 0.00) !important;
+}
+
+.rbc-time-view .rbc-today {
+  background-color: rgba(0, 132, 137, 0.04);
+}
+
+.rbc-current-time-indicator {
+  height: 3px;
+  background-color: $popColor;
+  pointer-events: none;
+}
+
+.rbc-time-content>*+*>* {
+  border-left: 1px solid #ECEFF1;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #ECEFF1;
+}
+
+// removing the selected color from the entire background on the active day
+.rbc-today {
+  background-color: transparent;
+}
+
+.rbc-header {
+  font-size: 14px;
+  font-weight: 500;
+  color: $primaryColor;
+  border-bottom: 1px solid #ECEFF1;
+}
+
+.rbc-time-view {
+  border: 1px solid #e0e0e0;
+  border-width: 1px 0px 1px 0px;
+}
+
+.rbc-time-view .rbc-row {
+  min-height: 25px;
+}
+
+.rbc-header+.rbc-header {
+  border-left: 1px solid #ECEFF1;
+}
+
+.rbc-day-bg+.rbc-day-bg {
+  border-left: 1px solid #ECEFF1;
+}
+
+// Pop Color on the active day
+.rbc-header.rbc-today {
+  color: $altColor !important;
+  font-weight: 600;
+}
+
+//Thicker border separator from all day to time area
+.rbc-time-content {
+  border-top: 2px solid #ECEFF1;
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #ECEFF1;
+}
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+  border-top: 1px solid #ECEFF1;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 0px solid #ECEFF1;
+}
+
+.rbc-time-view .rbc-allday-cell {
+  background-color: #fafafa;
+}
+
+.rbc-time-header-content {
+  border-left: 1px solid #ECEFF1;
+}
+
+.rbc-event-label {
+  display: none;
+}
+
+.calendar-sider {
+  background: none;
+
+  .ant-layout-sider-zero-width-trigger {
+    right: -36px;
+    font-size: 14px;
+    border-radius: 50px;
+    width: 40px;
+    line-height: 0;
+    background: none;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .calendarToggle {
+    width: 35px;
+    font-size: 14px;
+    color: $secondaryText;
+    z-index: 2;
+    border: 1px solid $border-color;
+
+    &:hover {
+      color: $altColor !important;
+      border: 1px solid $altColor;
+    }
+  }
+
+  .ant-picker-calendar-mini {
+    background: none;
+
+    .ant-select-selector .ant-radio-button-wrapper .ant-picker-panel {
+      background: none;
+
+    }
+
+    .ant-select-selector {
+      background: none;
+
+    }
+
+    .ant-radio-button-wrapper {
+      background: none;
+
+    }
+
+    .ant-picker-panel {
+      background: none;
+    }
+  }
+}
+
+
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  border-radius: 20px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: 1px solid #012729;
+  border-radius: 20px;
+}
+
+.ant-picker-calendar-date-value {
+  font-size: 13px;
+}
+
+.appointmentConfirmSelect {
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.aptModalInfoLabel {
+  @include fontMedium
+}
+
+.apptModalSection {
+  padding-bottom: 12px;
+}
+
+.apptModalTime {
+  @include fontMedium;
+}
+
+.apptPatientName {
+  @include fontMedium;
+}
+
+
+/////////////////////////////Appt Quick View TAGS ///////////////////////
+@mixin appointmentPill {
+  padding: 4px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  @include fontMedium;
+  min-width: 140px;
+  text-align: center;
+  position: fixed;
+  margin-left: -75px;
+  margin-top: 7px;
+}
+
+.wellnessTag {
+  @include appointmentPill;
+  background-color: #EBFEFF;
+  color: #008489;
+  border: 1px solid #008489;
+}
+
+.dentalTag {
+  @include appointmentPill;
+  background-color: #e1e3fe;
+  color: #9966FF;
+  border: 1px solid #9966FF;
+}
+
+.euthanasiaTag {
+  @include appointmentPill;
+  background-color: #f4dedf;
+  color: #E83151;
+  border: 1px solid #E83151;
+}
+
+.groomingTag {
+  @include appointmentPill;
+  background-color: #ADF0FF;
+  color: #00B7E0;
+  border: 1px solid #00B7E0;
+}
+
+.examTag {
+  @include appointmentPill;
+  background-color: #cff4df;
+  color: #43A047;
+  border: 1px solid #43A047;
+}
+
+.emergencyTag {
+  @include appointmentPill;
+  background-color: #FFF8E1;
+  color: #FF8F00;
+  border: 1px solid #FF8F00;
+}
+
+.blockTag {
+  @include appointmentPill;
+  background-color: #D7D7D7;
+  color: #717171;
+  border: 1px solid #717171;
+}
+
+.unknownTag {
+  @include appointmentPill;
+  background-color: #D7D7D7;
+  color: #717171;
+  border: 1px solid #717171;
+}
+
+
+.boardingTag {
+  @include appointmentPill;
+  background-color: #C8D4E4;
+  color: #2F4D86;
+  border: 1px solid #2F4D86;
+}
+
+.othersTag {
+  @include appointmentPill;
+  background-color: #D7D7D7;
+  color: #717171;
+  border: 1px solid #717171;
+}
+
+.boardingTag {
+  @include appointmentPill;
+  background-color: #C8D4EA;
+  color: #2F4D86;
+  border: 1px solid #2F4D86;
+}
+
+.surgeryTag {
+  @include appointmentPill;
+  background-color: #cde8f8;
+  color: #0483DD;
+  border: 1px solid #0483DD;
+}
+
+/////////////////////////////POP OVER TAGS ///////////////////////
+.tooltip-custom {
+
+  @mixin popOverTag {
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    @include fontMedium;
+    min-width: 140px;
+    text-align: center;
+  }
+
+  .wellnessPopTag {
+    @include popOverTag;
+    background-color: #EBFEFF;
+    margin-top: 3px;
+    color: #008489;
+    border: 1px solid #008489;
+  }
+
+  .dentalPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #e1e3fe;
+    color: #9966FF;
+    border: 1px solid #9966FF;
+  }
+
+  .euthanasiaPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #f4dedf;
+    color: #E83151;
+    border: 1px solid #E83151;
+  }
+
+  .groomingPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #ADF0FF;
+    color: #00B7E0;
+    border: 1px solid #00B7E0;
+  }
+
+  .examPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #cff4df;
+    color: #43A047;
+    border: 1px solid #43A047;
+  }
+
+  .emergencyPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #FFF8E1;
+    color: #FF8F00;
+    border: 1px solid #FF8F00;
+  }
+
+  .surgeryPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #cde8f8;
+    color: #0483DD;
+    border: 1px solid #0483DD;
+  }
+
+  .blockPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #D7D7D7;
+    color: #717171;
+    border: 1px solid #717171;
+  }
+
+  .unknownPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #D7D7D7;
+    color: #717171;
+    border: 1px solid #717171;
+  }
+
+  .boardingPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #C8D4E4;
+    color: #2F4D86;
+    border: 1px solid #2F4D86;
+  }
+
+  .othersPopTag {
+    @include popOverTag;
+    margin-top: 3px;
+    background-color: #D7D7D7;
+    color: #717171;
+    border: 1px solid #717171;
+  }
+
+  .popOverTime {
+    font-size: 13px;
+    color: $primaryText;
+    padding-top: 5px;
+    margin-bottom: -3px;
+    @include fontMedium;
+  }
+
+  .popOverName {
+    font-size: 14px !important;
+    @include fontSemi;
+  }
+
+  .popOverNotesTitle {
+    font-size: 13px;
+    @include fontSemi;
+  }
+
+  .appointment-popover-title {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .popOverNotes {
+    font-size: 13px;
+    margin-top: -10px;
+    padding-bottom: 18px;
+  }
+}
+
+// This is for the Calendar Blocks Text ///
+.calEventName {
+  font-size: 12px;
+  @include fontSemi;
+}
+
+.calEventStatus {
+  font-size: 12px;
+}
+
+.topActionButton {
+  min-width: 195px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .calendar-sider {
+    display: none;
+  }
+}

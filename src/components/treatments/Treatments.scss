@@ -1,0 +1,68 @@
+@use './../../customstyle.scss' as *;
+
+.table-title-top {
+  margin: 0px 0px 20px 0px;
+  padding: 0px !important;
+}
+
+.tab-health {
+
+  .editIcon,
+  .trashIcon,
+  .viewIcon {
+    fill: $primaryColor;
+
+    &:hover {
+      fill: $altColor;
+    }
+  }
+}
+
+.table-title {
+  margin: 20px 0px 20px 0px;
+}
+
+.treatment-drawer {
+  .ant-drawer-header {
+    border-bottom: none;
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+  }
+}
+
+.treatment-item-card {
+  border-radius: 16px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $altColor !important;
+
+    .item-name {
+      color: $altColor;
+    }
+
+    .history-item-icon {
+      fill: $altColor !important;
+    }
+  }
+}
+
+#treatment-form-id {
+  .ant-form-item-label>label {
+    //display: inline-grid;
+    width: 100%
+  }
+}
+
+.treatmentsecondary {
+  color: $secondaryText;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.treatmentName {
+  font-size: 18px;
+}

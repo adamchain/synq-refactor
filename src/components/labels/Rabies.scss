@@ -1,0 +1,63 @@
+.gutter-box {
+    padding: 8px 0;
+    background: #00a0e9;
+  }
+  [data-theme="dark"] .gutter-box {
+    background: #028ac8;
+  }
+  
+  .rabies-prev {
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  .certColLabel {
+    padding: 12px;
+    background-color: #f1f5fa;
+    font-weight: 600;
+    border: 1px solid #e0e0e0;
+    border-width: 0px 1px 1px 1px;
+    font-size: 16px;
+  }
+  
+  .CertColSubLabel {
+    padding: 12px;
+    background-color: #f1f5fa;
+    border: 1px solid #e0e0e0;
+    border-width: 0px 1px 1px 1px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .CertColLeftSideBE {
+    border-width: 0px 0px 1px 1px !important;
+  }
+  
+  .CertColEntry {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-width: 0px 1px 1px 1px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .vetSig {
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "WindSong", cursive;
+    min-height: 100px;
+  }
+  
+  .appointmentSig {
+    padding: 12px;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .CertBottomBar {
+    padding: 12px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #717171;
+  }
+  

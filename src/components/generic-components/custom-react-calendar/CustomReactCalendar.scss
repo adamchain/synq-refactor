@@ -1,0 +1,24 @@
+@use "../../../customstyle.scss" as *;
+
+#innerCalendar .react-calendar {
+  width: 280px;
+  max-width: 100%;
+  line-height: 1.125em;
+  border: 0px;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+#innerCalendar .react-calendar__tile--active {
+  background: $altColor;
+  color: white;
+  border-radius: 20px;
+}
+
+#innerCalendar .react-calendar__tile--now {
+  border: 0px solid;
+  background: none;
+  color: $altColor;
+  border-radius: 20px;
+
+}
